@@ -1,0 +1,12 @@
+4c4cff96 vs
+5050ff96 vs
+530eff96
+
+jabo_dsound.dll + 4c02ff96
+project64.exe + 52ceff96
+jabo-pj64 = 6cc
+
+
+
+mp64 = 0029
+zlib = 1000
