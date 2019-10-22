@@ -10,3 +10,31 @@ jabo-pj64 = 6cc
 
 mp64 = 0029
 zlib = 1000
+
+Valid assembly instructions:
+  BEGIN: 0x8000'0000
+  END:  ~0x8007'f000
+Some gfx setting code loop: 0x8007722C
+Main execution loop?: 0x8006548C
+
+After assembly instructions is (probably) graphics data; will test
+
+0x8008'FB10 -> bitfield? BMP font?
+
+0x800C'FAE0 -> volatile memory stuff maybe
+
+0x800D'22A8 -> Large blocks of occasionally-updating memory. Music stream? 
+0x800F'6A70 - 0x800F'A114 -> Same.
+
+0x800E'62B0 -> Smaller blocks of often-updating memory. Approaching 0x800E'79C8, data updates less frequently. It also maybe expanded while I was watching it.
+0x800E'E3B0 - 0x800E'F950 -> More of the same.
+
+~0x800F'D000 -> A bunch of memory address pointers.
+
+~0x802A'0000 -> Very organized static data.
+
+0x8032'1F90 -> Huge bitmap drawing
+
+0x8400'0000 -> More volatile memory
+
+0x9000'0000 -> ROM

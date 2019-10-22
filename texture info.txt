@@ -1,0 +1,6 @@
+487221
+
+
+Textures:
+start: 80000
+end: 48EA00
